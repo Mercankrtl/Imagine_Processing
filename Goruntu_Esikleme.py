@@ -18,12 +18,13 @@ plt.imshow(thresh_img, cmap="gray")
 plt.axis("off")
 plt.show()
 
-#_: Threshold fonksiyonu, eşik değerini döner.
-#thresh=60: Eşik değeri. Piksel değerleri 0 ile 255 arasında olmalıdır. Bu örnekte, eşik değeri 60 olarak belirlenmiştir.
-#type=cv2.THRESH_BINARY: İkili (binary) eşikleme türü. Piksel değerleri şunlara göre belirlenir:
-#Eğer piksel değeri eşikten küçükse, piksel değeri 0 yapılır (siyah).
-#Eğer piksel değeri eşikten büyük veya eşitse, piksel değeri 255 yapılır (beyaz).
-
+"""
+_: Threshold fonksiyonu, eşik değerini döner.
+thresh=60: Eşik değeri. Piksel değerleri 0 ile 255 arasında olmalıdır. Bu örnekte, eşik değeri 60 olarak belirlenmiştir.
+type=cv2.THRESH_BINARY: İkili (binary) eşikleme türü. Piksel değerleri şunlara göre belirlenir:
+Eğer piksel değeri eşikten küçükse, piksel değeri 0 yapılır (siyah).
+Eğer piksel değeri eşikten büyük veya eşitse, piksel değeri 255 yapılır (beyaz).
+"""
 
 
 
@@ -34,13 +35,14 @@ plt.imshow(thresh_img2, cmap="gray")
 plt.axis("off")
 plt.show()
 
-#cv2.adaptiveThreshold() Fonksiyonu:Yerel bölgelerdeki parlaklık farklılıklarına bağlı olarak, her piksel için eşik değeri dinamik olarak belirlenir.
-#255: Maksimum değer (maxValue): Bir pikselin değeri eşik değerini geçerse bu maksimum değer atanır.Burada, beyaz pikseller için maksimum değer olan 255 kullanılmıştır.
-#cv2.ADAPTIVE_THRESH_MEAN_C: Her piksel için eşik değeri, pikselin çevresindeki belirli bir bölgedeki komşu piksellerin ortalaması alınarak hesaplanır.
-#type=cv2.THRESH_BINARY: İkili (binary) eşikleme türü. Piksel değerleri şunlara göre belirlenir:
-#Eğer piksel değeri eşikten küçükse, piksel değeri 0 yapılır (siyah).
-#Eğer piksel değeri eşikten büyük veya eşitse, piksel değeri 255 yapılır (beyaz).
-
+"""
+cv2.adaptiveThreshold() Fonksiyonu:Yerel bölgelerdeki parlaklık farklılıklarına bağlı olarak, her piksel için eşik değeri dinamik olarak belirlenir.
+255: Maksimum değer (maxValue): Bir pikselin değeri eşik değerini geçerse bu maksimum değer atanır.Burada, beyaz pikseller için maksimum değer olan 255 kullanılmıştır.
+cv2.ADAPTIVE_THRESH_MEAN_C: Her piksel için eşik değeri, pikselin çevresindeki belirli bir bölgedeki komşu piksellerin ortalaması alınarak hesaplanır.
+type=cv2.THRESH_BINARY: İkili (binary) eşikleme türü. Piksel değerleri şunlara göre belirlenir:
+Eğer piksel değeri eşikten küçükse, piksel değeri 0 yapılır (siyah).
+Eğer piksel değeri eşikten büyük veya eşitse, piksel değeri 255 yapılır (beyaz).
+"""
 
 
 
